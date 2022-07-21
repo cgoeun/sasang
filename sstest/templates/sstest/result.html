@@ -1,7 +1,6 @@
 {% load static %}
 <body>
-{{s_list}}
-    <h1>당신의 체질은 {{result_type}}입니다.</h1>
+    <h1>당신의 체질은 {%for type in result_type%} {{type}} {%endfor%}입니다.</h1>
     <img src = '/static/img/라이언_독주_태음.png' width = '200pix'> 
     <img src = '/static/img/무지_맥주_소양.png' width = '200pix'> 
     <img src = '/static/img/어피치_와인_태양.png' width = '200pix'> 
