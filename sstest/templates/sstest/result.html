@@ -4,10 +4,10 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="/static/css/result.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
-    <script src="/static/js/jquery-3.5.1.js"></script>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static '/css/result.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/reset.css' %}">
+        <script src="{% static '/js/jquery-3.5.1.js' %}"></script>
     <title>나의 개발 유형찾기</title>
 </head>
 <body>
@@ -182,7 +182,7 @@
 
 
   
-<script type="text/javascript" src="./나의 개발 유형찾기3_files/result.js.다운로드"></script>
+<script type="text/javascript" src="{% static '/js/result.js' %}"></script>
 
 
 </body></html>
