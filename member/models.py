@@ -9,6 +9,7 @@ class Member(models.Model):
     user_birth = models.DateField()
     user_gender = models.SmallIntegerField(null=True)
     date_joined = models.DateTimeField()
+    result_type = models.CharField(max_length=200, null=True)
     
     class Meta:
         db_table = 'member'
