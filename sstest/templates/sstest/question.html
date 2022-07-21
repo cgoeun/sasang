@@ -7,12 +7,12 @@
         <link rel="stylesheet" type="text/css" href="{% static '/css/form.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static '/css/reset.css' %}">
         <script src="{% static '/js/jquery-3.5.1.js' %}"></script>
-        <title>브라우저용 제목</title>
+        <title>내 몸에 맞는 술 궁합</title>
     </head>
     <body>
         <section id="survey">
             <div class="wrapper">
-                <form id="form" action="/submit/" method="post">
+                <form id="form" action="/sstest/result/" method="post">
                     {% csrf_token %}
 
                     <div class="test">
@@ -28,7 +28,7 @@
                                     type="radio"
                                     name="question-1"
                                     id="choice-1"
-                                    value="5"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-1">1. 이마가 넓고 광대뼈가 나왔다.</label>
                             </div>
@@ -38,7 +38,7 @@
                                     type="radio"
                                     name="question-1"
                                     id="choice-2"
-                                    value="1"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-2">2. 이목구비가 큼직큼직하고 입술이 두텁다.</label>
                             </div>
@@ -48,7 +48,7 @@
                                     type="radio"
                                     name="question-1"
                                     id="choice-3"
-                                    value="4"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-3">3. 얼굴이 약간 긴편이고, 입은 크지 않으며, 턱이 뾰족한 편이다.</label>
                             </div>
@@ -58,7 +58,7 @@
                                     type="radio"
                                     name="question-1"
                                     id="choice-4"
-                                    value="2"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-4">4. 이목구비가 작고 오목조목하며, 계란형이다.</label>
                             </div>
@@ -86,7 +86,7 @@
                                     type="radio"
                                     name="question-2"
                                     id="choice-5"
-                                    value="3"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-5">1. 목덜미가 굵고 허리부위가 가는 역삼각형이다.</label>
                             </div>
@@ -106,7 +106,7 @@
                                     type="radio"
                                     name="question-2"
                                     id="choice-7"
-                                    value="5"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-7">3. 어깨와 가슴이 발달했고, 엉덩이와 다리는 빈약하다.</label>
                             </div>
@@ -116,7 +116,7 @@
                                     type="radio"
                                     name="question-2"
                                     id="choice-8"
-                                    value="1"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-8">4. 어깨가 좁고 가슴이 빈약하며, 엉덩이가 큰편이다.</label>
                             </div>
@@ -156,7 +156,7 @@
                                     type="radio"
                                     name="question-3"
                                     id="choice-10"
-                                    value="3"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-10">2. 피부가 두껍고 땀구멍이 큰 편이다.</label>
                             </div>
@@ -166,7 +166,7 @@
                                     type="radio"
                                     name="question-3"
                                     id="choice-11"
-                                    value="2"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-11">3. 피부가 까무잡잡하거나 붉은 편이다.</label>
                             </div>
@@ -206,7 +206,7 @@
                                     type="radio"
                                     name="question-4"
                                     id="choice-13"
-                                    value="2"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-13">1. 꼿꼿하게 걷지만 걸음걸이가 약간 어색하다.</label>
                             </div>
@@ -216,7 +216,7 @@
                                     type="radio"
                                     name="question-4"
                                     id="choice-14"
-                                    value="1"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-14">2. 느릿느릿 젊잖게 걷는다.</label>
                             </div>
@@ -226,7 +226,7 @@
                                     type="radio"
                                     name="question-4"
                                     id="choice-15"
-                                    value="4"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-15">3. 몸을 꼿꼿이 세우고 빠르게 걷는다.</label>
                             </div>
@@ -236,7 +236,7 @@
                                     type="radio"
                                     name="question-4"
                                     id="choice-16"
-                                    value="3"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-16">4. 얌전하고 자연스럽게 걷는다.</label>
                             </div>
@@ -326,7 +326,7 @@
                                     type="radio"
                                     name="question-6"
                                     id="choice-21"
-                                    value="3"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-21">1. 어떤 일이든 적극적이고, 결단성 있게 처리하며 끈질기다.</label>
                             </div>
@@ -336,7 +336,7 @@
                                     type="radio"
                                     name="question-6"
                                     id="choice-22"
-                                    value="1"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-22">2. 보수적이지만 결단을 내릴 때는 과감하다.</label>
                             </div>
@@ -346,7 +346,7 @@
                                     type="radio"
                                     name="question-6"
                                     id="choice-23"
-                                    value="5"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-23">3. 매사에 열정적이고, 눈앞에 놓여있는 일을 미루는 법이 없다.</label>
                             </div>
@@ -356,7 +356,7 @@
                                     type="radio"
                                     name="question-6"
                                     id="choice-24"
-                                    value="2"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-24">4. 자기 의견을 겉으로 표현하기 보다 조용히 꼼꼼하게 처리한다.</label>
                             </div>
@@ -386,7 +386,7 @@
                                     type="radio"
                                     name="question-7"
                                     id="choice-25"
-                                    value="2"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-25">1. 카리스마가 있고, 대중을 이끄는 것을 좋아한다.</label>
                             </div>
@@ -396,7 +396,7 @@
                                     type="radio"
                                     name="question-7"
                                     id="choice-26"
-                                    value="1"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-26">2. 낙천적이며 화를 잘 안낸다.</label>
                             </div>
@@ -446,7 +446,7 @@
                                     type="radio"
                                     name="question-8"
                                     id="choice-29"
-                                    value="2"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-29">1. 소변의 양이 많고 잘 나올 때</label>
                             </div>
@@ -456,7 +456,7 @@
                                     type="radio"
                                     name="question-8"
                                     id="choice-30"
-                                    value="1"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-30">2. 땀이 잘 나올 때</label>
                             </div>
@@ -476,7 +476,7 @@
                                     type="radio"
                                     name="question-8"
                                     id="choice-32"
-                                    value="5"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-32">4. 소화가 잘 될 때</label>
                             </div>
@@ -506,7 +506,7 @@
                                     type="radio"
                                     name="question-9"
                                     id="choice-49"
-                                    value="2"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-49">1. 소변 양이 많고 자주 보면 몸이 가볍다.</label>
                             </div>
@@ -516,7 +516,7 @@
                                     type="radio"
                                     name="question-9"
                                     id="choice-50"
-                                    value="4"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-50">2. 긴장을 하면 심장이 두근거린다.</label>
                             </div>
@@ -526,7 +526,7 @@
                                     type="radio"
                                     name="question-9"
                                     id="choice-51"
-                                    value="1"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-51">3. 몸이 힘들면 코피가 조금씩 난다.</label>
                             </div>
@@ -536,7 +536,7 @@
                                     type="radio"
                                     name="question-9"
                                     id="choice-52"
-                                    value="3"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-52">4. 잘 놀라고 땀이 많이 나면 어지럽다.</label>
                             </div>
@@ -565,7 +565,7 @@
                                     type="radio"
                                     name="question-10"
                                     id="choice-49"
-                                    value="2"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-49">1. 가끔 토하는 경향이 있다.</label>
                             </div>
@@ -575,7 +575,7 @@
                                     type="radio"
                                     name="question-10"
                                     id="choice-50"
-                                    value="4"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-50">2. 웬만큼 먹어서는 탈이 나지 않을 정도로 소화를 잘 시킨다.</label>
                             </div>
@@ -585,7 +585,7 @@
                                     type="radio"
                                     name="question-10"
                                     id="choice-51"
-                                    value="1"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-51">3. 소화는 잘 시키는데, 변비가 있다.</label>
                             </div>
@@ -595,7 +595,7 @@
                                     type="radio"
                                     name="question-10"
                                     id="choice-52"
-                                    value="3"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-52">4. 늘 소화불량에 시달리는 편이다.</label>
                             </div>
@@ -625,7 +625,7 @@
                                     type="radio"
                                     name="question-11"
                                     id="choice-49"
-                                    value="2"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-49">1. 다른 증상 없이 다리에 힘이 없고 보행하기가 힘든 적이 있다.</label>
                             </div>
@@ -635,7 +635,7 @@
                                     type="radio"
                                     name="question-11"
                                     id="choice-50"
-                                    value="4"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-50">2. 열이 났다 멈추는 증상이 반복되는 경우가 있다.</label>
                             </div>
@@ -645,7 +645,7 @@
                                     type="radio"
                                     name="question-11"
                                     id="choice-51"
-                                    value="1"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-51">3. 물을 많이 먹고 자면 붓는다.</label>
                             </div>
@@ -655,7 +655,7 @@
                                     type="radio"
                                     name="question-11"
                                     id="choice-52"
-                                    value="3"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-52">4. 설사를 하면서 아랫배가 찬 적이 있다.</label>
                             </div>
@@ -685,7 +685,7 @@
                                     type="radio"
                                     name="question-12"
                                     id="choice-49"
-                                    value="2"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-49">1. 무엇이든 가리지는 않지만 먹는 양은 많지 않다.</label>
                             </div>
@@ -695,7 +695,7 @@
                                     type="radio"
                                     name="question-12"
                                     id="choice-50"
-                                    value="4"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-50">2. 무엇이든 많이 먹고, 기름진 음식을 좋아한다.</label>
                             </div>
@@ -705,7 +705,7 @@
                                     type="radio"
                                     name="question-12"
                                     id="choice-51"
-                                    value="1"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-51">3. 평소에는 괜찮지만 스트레스를 받으면 폭식을 한다.</label>
                             </div>
@@ -715,7 +715,7 @@
                                     type="radio"
                                     name="question-12"
                                     id="choice-52"
-                                    value="3"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-52">4. 음식을 가려먹는 편이다.</label>
                             </div>
@@ -745,7 +745,7 @@
                                     type="radio"
                                     name="question-13"
                                     id="choice-49"
-                                    value="2"
+                                    value="1"
                                     required="required"/>
                                 <label for="choice-49">1. 시원한 음식, 해물</label>
                             </div>
@@ -755,7 +755,7 @@
                                     type="radio"
                                     name="question-13"
                                     id="choice-50"
-                                    value="4"
+                                    value="2"
                                     required="required"/>
                                 <label for="choice-50">2. 육식, 따뜻한 음식</label>
                             </div>
@@ -765,7 +765,7 @@
                                     type="radio"
                                     name="question-13"
                                     id="choice-51"
-                                    value="1"
+                                    value="3"
                                     required="required"/>
                                 <label for="choice-51">3. 채소, 생선류, 찬 음식</label>
                             </div>
@@ -775,7 +775,7 @@
                                     type="radio"
                                     name="question-13"
                                     id="choice-52"
-                                    value="3"
+                                    value="4"
                                     required="required"/>
                                 <label for="choice-52">4. 뜨겁고 매운음식</label>
                             </div>

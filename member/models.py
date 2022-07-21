@@ -6,6 +6,10 @@ class Member(models.Model):
     user_id = models.CharField(max_length=50, unique=True)
     user_pw = models.CharField(max_length=50)
     user_name = models.CharField(max_length=50)
-    user_birthdate = models.DateField()
+    user_birth = models.DateField()
     user_gender = models.SmallIntegerField(null=True)
     date_joined = models.DateTimeField()
+    
+    class Meta:
+        db_table = 'member'
+        ordering = ['-id']
