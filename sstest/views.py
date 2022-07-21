@@ -32,3 +32,15 @@ def result(request):
             'result_type': result_type,
             
             })
+        
+def result1(request):
+    return render(request, 'sstest/result1.html')
+
+def result2(request):
+    return render(request, 'sstest/result2.html')
+
+def result3(request):
+    return render(request, 'sstest/result3.html')
+
+def result4(request):
+    return render(request, 'sstest/result4.html')
