@@ -37,10 +37,10 @@ def signup(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('member/login.html')
+            return redirect('/member/login.html')
     else:
         form = UserForm()
-    return render(request, 'member/signup.html', {'form': form})
+    return render(request, '/member/signup.html', {'form': form})
 
 # def login(request):
 #     if request.method == 'POST':
