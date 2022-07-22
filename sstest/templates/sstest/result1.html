@@ -4,9 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static '/css/result.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/css/reset.css' %}">
@@ -23,7 +21,7 @@
                     <h1>"태양인(太陽人)"</h1>
                 </div>
                 <div class="result_img">
-                    <img src='/static/img/어피치.png' width='200pix'>
+                    <img src='/static/어피치.png' width='200pix'>
                 </div>
             </div>
             <div class="result_explains">
@@ -58,23 +56,54 @@
                     </div>
                     <div class="explain">
                         <h3 class="title">추천하는 안주!</h3>
-                        <ul class="menu_lists">
+                        <ul class="language_lists">
                             <li>
-                                조개찜 또는 국. 해산물, 구이, 과일
+                                <div class="img_wrap">
+                                    <img src='/static/1_태양안주.jpg' alt='조개찜'>
+                                </div>
+                                <h3>조개찜</h3>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src='/static/2_태양안주.jpg' alt='포도'>
+                                </div>
+                                <h3>포도</h3>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src='/static/3_태양안주.jpg' alt='해산물 샐러드'>
+                                </div>
+                                <h3>해산물 샐러드</h3>
                             </li>
                         </ul>
                     </div>
                     <div class="explain">
                         <h3 class="title">숙취해소 음식!</h3>
-                        <ul class="menu_lists">
+                        <ul class="language_lists">
                             <li>
-                                키위차, 모과차, 조개국, 메밀죽
+                                <div class="img_wrap">
+                                    <img src='/static/4_태양숙취.jpg' alt='모과차'>
+                                </div>
+                                <h3>모과차</h3>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src='/static/5_태양숙취.jpg' alt='키위주스'>
+                                </div>
+                                <h3>키위주스</h3>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src='/static/6_태양숙취.jpg' alt='메밀죽'>
+                                </div>
+                                <h3>메밀죽</h3>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
+                    <a href="javascript:window.history.back();"><button>뒤로가기</button></a>
+                    <div>
     </section>
+    <script type="text/javascript" src="{% static '/js/result.js' %}"></script>
 </body>
+
 </html>

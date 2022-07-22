@@ -4,9 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static '/css/result.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/css/reset.css' %}">
@@ -19,12 +17,11 @@
         <div class="wrapper">
             <div class="result">
                 <div class="titles">
-
                     <h3>금방 취하는 당신은 !</h3>
                     <h1>“소음인(少陰人)”</h1>
                 </div>
                 <div class="result_img">
-                    <img src='/static/img/소음1.png' >
+                    <img src='/static/네오.png' width='200pix'>
                 </div>
             </div>
             <div class="result_explains">
@@ -48,8 +45,7 @@
                     </div>
                     <div class="explain">
                         <h3 class="title">당신에게 맞는 술은?</h3>
-                        <h4 class="sub_title">
-                            “소주와 브랜디가 찰떡궁합”</h4>
+                        <h4 class="sub_title"> “소주와 브랜디가 찰떡궁합”</h4>
                         <ul>
                             <li>
                                 비위가 약하고 몸이 차갑고 기가 부족하기 쉬운 체질이므로 맥주 등 성질이 찬 술을 좋지 않다.
@@ -62,30 +58,56 @@
                             </li>
 
                         </ul>
-                    </div>
-                    <div class="explain">
-                        <h3 class="title">추천하는 안주!
-                        </h3>
-                        <ul class="menu_lists">
-                            <li>
-                                닭고기, 귤, 사과, 복숭아
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="explain">
-                        <h3 class="title">숙취해소 음식!</h3>
-                        <ul class="menu_lists">
-                            <li>
-                                인삼차, 꿀물, 생강차
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
+                        <div class="explain">
+                            <h3 class="title">추천하는 안주!</h3>
+                            <ul class="language_lists">
+                                <li>
+                                    <div class="img_wrap">
+                                        <img src='/static/1_소음안주.jpg' alt='닭고기'>
+                                    </div>
+                                    <h3>닭고기</h3>
+                                </li>
+                                <li>
+                                    <div class="img_wrap">
+                                        <img src='/static/2_소음안주.jpg' alt='감자'>
+                                    </div>
+                                    <h3>감자</h3>
+                                </li>
+                                <li>
+                                    <div class="img_wrap">
+                                        <img src='/static/3_소음안주.jpg' alt='복숭아'>
+                                    </div>
+                                    <h3>복숭아</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="explain">
+                            <h3 class="title">숙취해소 음식!</h3>
+                            <ul class="language_lists">
+                                <li>
+                                    <div class="img_wrap">
+                                        <img src='/static/4_소음숙취.jpg' alt='생강차'>
+                                    </div>
+                                    <h3>생강차</h3>
+                                </li>
+                                <li>
+                                    <div class="img_wrap">
+                                        <img src='/static/5_소음숙취.jpg' alt='인삼차'>
+                                    </div>
+                                    <h3>인삼차</h3>
+                                </li>
+                                <li>
+                                    <div class="img_wrap">
+                                        <img src='/static/6_소음숙취.jpg' alt='꿀물'>
+                                    </div>
+                                    <h3>꿀물</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="javascript:window.history.back();"><button>뒤로가기</button></a>
+                        <div>
+        </section>
+    <script type="text/javascript" src="{% static '/js/result.js' %}"></script>
 </body>
 
 </html>
