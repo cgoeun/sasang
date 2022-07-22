@@ -22,10 +22,10 @@
                         <h1>나의 사상체질은?!?!</h1>
                         <div class="type">
                             <ul class="type_list">
-                                <li>태양인</li>
-                                <li>태음인</li>
-                                <li>소양인</li>
-                                <li>소음인</li>
+                                <li><img src='/static/img/태양.png' width='230pix'>태양인</li>
+                                <li><img src='/static/img/태음.png' width='230pix'>태음인</li>
+                                <li><img src='/static/img/소양.png' width='200pix'>소양인</li>
+                                <li><img src='/static/img/소음.png' width='230pix'>소음인</li>
                             </ul>
                         </div>
                     </div>
@@ -33,17 +33,12 @@
                 <div class="buttons">
                     {% if not user.is_authenticated %}
                     <a href="/member/login">
-                    <button type="button">시작하기 전 로그인</button></a>
-                    <a href="/member/signup">
-                    <button type="button">회원가입</button></a>
+                    <button type="button">로그인/회원가입</button></a>
                     {% else %}
                     <a href="/sstest/qSet">
                         <button class="start" type="button">시작하기</button>
                     </a>
                     {% endif %}
-                    <a href="/">
-                        <button class="start" type="button">홈으로</button>
-                    </a>
                 </div>
             </div>
         </section>

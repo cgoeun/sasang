@@ -15,13 +15,12 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
      id="password" value="{{ form.password.value | default_if_none:'' }}">
   </div>
   <button type="submit" class="btn btn-primary">로그인</button>
+   <a href="/member/signup">
+                    <button type="button" class="btn btn-primary">회원가입</button></a>
  </form>
     {% if user.is_authenticated %}
         <p>
-            <a class='nav-link' href="{% url 'member:logout' %}">
-                {{ user.username }}
-                님 반갑습니다. (로그아웃)
-            </a>
+        <script>alert('로그인 되었습니다.');location.href='/sstest/main';</script>
         </p>
     {% else %}
         <p>현재 상태 : Guest</p>
