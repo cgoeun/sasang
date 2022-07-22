@@ -1,6 +1,4 @@
 from django.db import models
-
-
 class Member(models.Model):
 
     user_id = models.CharField(max_length=50, unique=True)
@@ -11,6 +9,6 @@ class Member(models.Model):
     date_joined = models.DateTimeField()
     result_type = models.CharField(max_length=200, null=True)
     
-    class Meta:
-        db_table = 'member'
-        ordering = ['-id']
+    # class Meta:
+    #     db_table = 'member'
+    #     ordering = ['-id']
